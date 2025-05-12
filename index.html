@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="wraper">
+        <header>
+            <div class="header-content">
+                <div class="website-name">ANIME WORLD</div>
+                <button id="loginBtn">Login</button>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#about-page">About</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search....." id="searchInput" keyup>
+                <button id="searchBtn" onclick="performSearch()">Search</button>
+            </div>
+        </header> 
+        <main>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="Carousel_Images/Solo Leveling 2.jpeg" alt="Slide 1">
+                    <img src="Carousel_Images/The Apothecary Diaries.jpeg" alt="Slide 2">
+                    <img src="Carousel_Images/Frieren_Beyond_Journey's_End.jpeg" alt="Slide 3">
+                    <img src="Carousel_Images/My Hero Academia_ You're Next.jpeg" alt="Slide 4">
+                    <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Slide 5">
+                    <img src="Carousel_Images/Solo Leveling 2.jpeg" alt="Slide 1">
+                    <img src="Carousel_Images/The Apothecary Diaries.jpeg" alt="Slide 2">
+                    <img src="Carousel_Images/Frieren_Beyond_Journey's_End.jpeg" alt="Slide 3">
+                    <img src="Carousel_Images/My Hero Academia_ You're Next.jpeg" alt="Slide 4">
+                    <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Slide 5">
+                </div>
+            </div>
+            <div id="searchResultsContainer"class="card-container hidden">
+
+            </div>
+            <div class="card-container">
+                <div class="card-row">
+                    <div class="card">
+                        <img src="Carousel_Images/Solo Leveling 2.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name: Solo Leveling Season 2</p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 14</p>
+                            <button class="watch-Btn">Watch</button>
+                            <button 
+                            class="info-Btn"
+                            data-name="Solo Leveling"
+                            data-description="Hunter's Journey"
+                            data-image="Carousel_Images/Solo Leveling 2.jpeg">i</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/The Apothecary Diaries.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name: The Apothecary Diaries</p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 14</p>
+                            <button class="watch-Btn">Watch</button>
+                            <button 
+                            class="info-Btn"
+                            data-name="The Apothecary Diaries"
+                            data-description="Diaries"
+                            data-image="Carousel_Images/The Apothecary Diaries.jpeg">i</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Frieren_Beyond_Journey's_End.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name:Frieren: Beyond Journey's End </p>
+                            <p>Release Date: 2023</p>
+                            <p>Rating: 9.3</p>
+                            <p>Episodes: 28</p>
+                            <button class="watch-Btn">Watch</button>
+                            <button 
+                            class="info-Btn"
+                            data-name="Frieren_Beyond_Journey's_End"
+                            data-description="Frieren_Beyond_Journey's_End follows an elven mage who embarks on a reflective journey after her party
+                            defeats the Demon King. As an immortal, she grapples with the fleeting lives of humans and seek to understand the emotions
+                            she once overlooked. It's a heartfelt, philosophical tale about time, memory and connection."
+                            data-image="Carousel_Images/Frieren_Beyond_Journey's_End.jpeg">i</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/My Hero Academia_ You're Next.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name:My Hero Academia: You're Next </p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.0</p>
+                            <p>Episodes: 1</p>
+                            <button class="watch-Btn">Watch</button>
+                            <button 
+                            class="info-Btn"
+                            data-name="My Hero Academia_ You're Next"
+                            data-description="my Hero Academia: You Are Next explores a new original story beyond the manga, where a mysterious figure
+                            bearing a striking resemblance to all Might emerges. As chaos unfolds, Deku and his friends must face powerful enemies in 
+                            a society shaken by uncertainity. The movie dives deep into legacy, hope, and what it truly means to be a hero."
+                            data-image="Carousel_Images/My Hero Academia_ You're Next.jpeg">i</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name: Solo Leveling Season 2</p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 14</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 14</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name: Solo Leveling Season 2</p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 14</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Slide 1">
+                        <div class="card-content">
+                            <p class="card-title">Name: Solo Leveling Season 2</p>
+                            <p>Release Date: 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 14</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-row hidden" id="extraCards">
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-row hidden" id="extraCards">
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Carousel_Images/Shangri-La Frontier.jpeg" alt="Anime 9">
+                        <div class="card-content">
+                            <p class="card-title">Name: Attack on Titan</p>
+                            <p>Release Date : 2025</p>
+                            <p>Rating: 9.4</p>
+                            <p>Episodes: 50</p>
+                            <button class="watch-Btn">Watch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-wrapper">
+                <button id="viewMoreBtn">View More</button>
+                <button id="viewLessBtn">View Less</button>
+            </div>
+            <div id="about-page" class="about-section">
+                <h2>About Anime World</h2>
+                <p>
+                  Welcome to <strong>Anime World</strong> — the ultimate destination for anime lovers! Whether you're a casual viewer or a seasoned otaku, this is your hometown for everything anime.
+                </p>
+                <h3>Why Choose Anime World?</h3>
+                <ul>
+                  <li><span>⭐</span> Stay updated with the latest anime releases.</li>
+                  <li><span>🎯</span> Instantly access ratings, episode counts, and release dates.</li>
+                  <li><span>🌀</span> Discover your next obsession in just one scroll!</li>
+                </ul>
+                <h3>Our Mission</h3>
+                <p>
+                  To provide a clean, fast, and fun way to explore the anime universe. We aim to make anime exploration enjoyable, informative, and visually captivating.
+                </p>
+                <p><strong>Join Anime World</strong> and never miss a moment from your favorite shows!</p>
+              </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about-page">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacts</h4>
+                    <p>Support@AnimeWorld.com</p>
+                    <p>Phone: +91-93464-10738</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Anime world!. All rights are reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <span id="closePopup" class="close-Btn">&times;</span>
+                <img id="popup-image" src="Carousel_Images/Solo Leveling 2.jpeg" alt="Slide 1" class="popup-img">
+                <h2 id="popup-title">Solo Leveling</h2>
+                <p id="popup-description">Hunter's Journey</p>
+            </div>
+    
+        </div>
+        <script>
+            const loginBtn = document.getElementById('loginBtn');
+            loginBtn.addEventListener('click', 
+            function() {
+                alert('Login Successfully');
+                loginBtn.style.display = 'none';
+            });
+
+            const popup = document.getElementById('popup');
+            const closePopup = document.getElementById('closePopup')
+            const infoButton = document.querySelectorAll('.info-Btn');
+            const content = document.getElementById('content');
+    
+            const popupTitle = document.getElementById('popup-title');
+            const popupDescription = document.getElementById('popup-description');
+            const popupImage = document.getElementById('popup-image');
+            infoButton.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const name = btn.getAttribute('data-name');
+                    const description = btn.getAttribute('data-description');
+                    const image = btn.getAttribute('data-image');
+                    popupTitle.textContent = name;
+                    popupDescription.textContent = description;
+                    popupImage.src = image;
+    
+                    popup.style.display = 'flex';
+                    content.classList.add('blur');
+                });
+            });
+            closePopup.addEventListener('click', () => {
+                popup.style.display = 'none';
+                content.classList.remove('blur');
+            });
+            window.addEventListener('click', (e) => {
+                if(e.target === popup) {
+                    popup.style.display = 'none';
+                    content.classList.remove('blur');
+                }
+            });
+    
+            const viewMoreBtn = document.getElementById("viewMoreBtn");
+            const viewLessBtn = document.getElementById("viewLessBtn");
+            const hiddenCards = document.querySelectorAll(".card-row.hidden");
+           
+           viewMoreBtn.addEventListener("click", () => 
+           {
+                    hiddenCards.forEach(row => 
+                    row.classList.remove("hidden"));
+                    viewMoreBtn.style.display = "none";
+                    viewLessBtn.style.display = "inline-block";
+
+           });
+
+           viewLessBtn.addEventListener("click", () => {
+                    hiddenCards.forEach(row =>
+                    row.classList.add("hidden"));
+                    viewMoreBtn.style.display = "inline-block";
+                    viewLessBtn.style.display = "none";
+                    window.scrollTo({ top: document.querySelector(".card-container").offsetTop, behavior:"smooth"});
+           });
+
+           function performSearch() {
+            const query = document.getElementById("searchInput").value.toLowerCase();
+            const cards = document.querySelectorAll(".card");
+            const searchResultsContainer = document.getElementById("searchResultsContainer");
+            let foundMatches = false;
+            searchResultsContainer.innerHTML = "";
+            cards.forEach(card => {
+                const titleElement = card.querySelector(".card-content p");
+                if (!titleElement)
+                return;
+                const cardTitle = titleElement.textContent.toLowerCase();
+                if (cardTitle.includes(query)) {
+                    const clonedCard = card.cloneNode(true)
+                    searchResultsContainer.appendChild(clonedCard);
+                    foundMatches = true;
+                }
+            });
+            if (foundMatches) {
+                searchResultsContainer.classList.remove("hidden");
+            }
+            else {
+                searchResultsContainer.classList.add("hidden");
+            }
+        }
+
+        </script> 
+        
+</body>
+</html>
